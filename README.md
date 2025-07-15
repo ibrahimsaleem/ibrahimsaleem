@@ -7,6 +7,12 @@
 
 ---
 
+## 📝 Summary
+
+I am a fast-paced developer who thrives on building features and updates at lightning speed, leveraging a wide array of AI tools to develop and prototype new ideas rapidly. My passion lies in creating, iterating, and always striving for better solutions—whether jumping into new projects or elevating existing ones, I consistently deliver results within days, not weeks. I am known for my adaptability, ability to code anytime and anywhere, and my relentless drive to push projects to the next level. While I dedicate my weekdays to deep work and innovation, weekends are for meeting new people at events, sharing my projects, and drawing inspiration from real-world interactions. If you hire me, you'll gain the fastest developer on your team—someone who can onboard quickly, make an immediate impact, and is always eager to learn, build, and share. I regularly receive the compliment: "You're fast!"—and I take pride in living up to it.
+
+---
+
 ## 🎓 Education
 
 **University of Houston** — *Master of Science in Cybersecurity*  
