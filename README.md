@@ -170,7 +170,6 @@ My approach:
     alt="GitHub Profile Summary" 
   />
 </p>
----
 
 ## Connect
 
