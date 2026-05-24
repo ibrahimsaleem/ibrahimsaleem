@@ -26,8 +26,19 @@
   Houston, TX | <a href="mailto:Ibrahimsaleem244@gmail.com">Ibrahimsaleem244@gmail.com</a>
 </p>
 
----
 
+<br>
+
+<p align="center">
+  <img 
+    src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=ibrahimsaleem&theme=radical" 
+    alt="GitHub Profile Summary" 
+  />
+</p>
+
+<br>
+
+---
 ## About Me
 
 I am an **AI Security & Governance Engineer** focused on securing enterprise-scale **LLM, GenAI, MCP, and agentic AI systems**.
@@ -161,15 +172,6 @@ My approach:
 - Build AI systems that are secure, auditable, and controllable.
 
 ---
-
-## GitHub Activity
-
-<p align="center">
-  <img 
-    src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=ibrahimsaleem&theme=radical" 
-    alt="GitHub Profile Summary" 
-  />
-</p>
 
 ## Connect
 
