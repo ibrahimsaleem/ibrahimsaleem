@@ -50,6 +50,21 @@ I work across **AI threat modeling, adversarial testing, secure AI SDLC, AI gove
 
 ---
 
+## Education
+
+### University of Houston  
+**Master of Science in Cybersecurity**  
+Houston, TX | Expected May 2026  
+GPA: 3.98/4.0 | Awarded $16K Scholarship  
+
+Relevant Coursework: Network Security, Secure Enterprise Computing, Cryptography, Data Analysis for Cybersecurity, Cybersecurity Risk Management, Secure Software Design
+
+### Rajiv Gandhi Proudyogiki Vishwavidyalaya  
+**Bachelor of Technology in Computer Science Engineering**  
+July 2023  
+
+---
+
 ## Experience
 
 ### AI Security & Governance Engineer  
@@ -68,7 +83,7 @@ I work across **AI threat modeling, adversarial testing, secure AI SDLC, AI gove
 *June 2025 – Dec 2025*
 
 - Built secure GenAI automation systems using LLMs, OCR, RAG, agent orchestration, and automated validation.
-- Secured production-style AI workflows against prompt injection, jailbreaks, sensitive data leakage, excessive agency, and tool misuse.
+- Secured AI workflows against prompt injection, jailbreaks, sensitive data leakage, excessive agency, and tool misuse.
 - Developed and secured MCP-based systems for enterprise automation use cases.
 - Contributed to a published SPE research paper on self-improving GenAI agents for automated report parsing.
 
