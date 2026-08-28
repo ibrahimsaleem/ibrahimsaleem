@@ -13,6 +13,7 @@
   <a href="https://linkedin.com/in/ibrahimsaleem91"><img src="https://img.shields.io/badge/LinkedIn-ibrahimsaleem91-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
   <a href="https://scholar.google.com/scholar?q=%22Mohammad+Ibrahim+Saleem%22"><img src="https://img.shields.io/badge/Google%20Scholar-Research-4285F4?style=for-the-badge&logo=googlescholar&logoColor=white" /></a>
   <a href="mailto:Ibrahimsaleem244@gmail.com"><img src="https://img.shields.io/badge/Email-Contact-D14836?style=for-the-badge&logo=gmail&logoColor=white" /></a>
+  <a href="./PROJECTS.md"><img src="https://img.shields.io/badge/📖_All_Projects-Full_Index-06B6D4?style=for-the-badge" /></a>
 </p>
 
 <p align="center">
@@ -125,6 +126,8 @@ I work across **AI threat modeling, adversarial testing, red teaming, secure AI 
 <img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:4F46E5,100:06B6D4&height=2" />
 
 ## 🚀 Featured Projects
+
+> 📖 Full catalogue of **all 62 repositories**, categorised with context for each → **[PROJECTS.md](./PROJECTS.md)**
 
 | Project | What it does | Focus / Stack |
 |---|---|---|
