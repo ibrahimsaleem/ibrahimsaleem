@@ -4,7 +4,7 @@
 
 <p align="center">
   <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=21&pause=1000&center=true&vCenter=true&width=820&height=42&color=7C3AED&lines=LLM+Red+Teaming+%7C+Agentic+AI+Security;MCP+Security+%7C+Secure+RAG+%7C+AI+Governance;Threat+Modeling+%7C+Secure+AI+SDLC+%7C+Runtime+Controls;Published+Researcher+%E2%80%94+IEEE+FMLDS+2025+%2F+SPE+2026" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=21&pause=1000&center=true&vCenter=true&width=820&height=42&color=7C3AED&lines=LLM+Red+Teaming+%7C+Agentic+AI+Security;MCP+Security+%7C+Secure+RAG+%7C+AI+Governance;Threat+Modeling+%7C+Secure+AI+SDLC+%7C+Runtime+Controls;Founder+%E2%80%94+HireEase+%C2%B7+WarmNode+(YC+F26);Published+Researcher+%E2%80%94+IEEE+FMLDS+2025+%2F+SPE+2026" alt="Typing SVG" />
   </a>
 </p>
 
@@ -37,9 +37,9 @@
 <table>
 <tr><td width="60%" valign="top">
 
-**AI Security & Governance Engineer** securing enterprise-scale **LLM, GenAI, MCP, and agentic AI systems**.
+**AI Security & Governance Engineer** securing enterprise-scale **LLM, GenAI, MCP, and agentic AI systems** — and a **solo founder** shipping AI products end-to-end.
 
-I work across **AI threat modeling, adversarial testing, red teaming, secure AI SDLC, AI governance, and runtime security controls** — turning ad-hoc AI risk work into repeatable, measurable, auditable engineering.
+**9+ years** of hands-on software development across self-directed projects, freelance work, **startups**, internships, research, and enterprise roles. I work across **AI threat modeling, adversarial testing, red teaming, secure AI SDLC, AI governance, and runtime security controls** — turning ad-hoc AI risk work into repeatable, measurable, auditable engineering.
 
 **Risk focus:** prompt injection · jailbreaks · tool poisoning · sensitive data leakage · excessive agency · insecure MCP servers · unsafe RAG · missing runtime controls
 
@@ -71,6 +71,8 @@ I work across **AI threat modeling, adversarial testing, red teaming, secure AI 
 | LIMA pentest framework | **95% success rate**, 8+ hrs → 15 min | UH *(IEEE FMLDS 2025)* |
 | PentestThinkingMCP | **90% accuracy / 50+ scenarios**, HTB "Lame" in 3 min @ ~$0.03/run | UH |
 | LLM vs. expert pentesters benchmark | **12/15 HTB boxes**, ~95% cost reduction | UH |
+| HireEase / AplyEase (founder) | **40,000+ applications processed · 300+ clients** · applied to YC | Founder |
+| WarmNode (founder) | Solo-built AI networking PWA · **YC Fall 2026 application submitted** | Founder |
 
 <img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:4F46E5,100:06B6D4&height=2" />
 
@@ -91,12 +93,12 @@ I work across **AI threat modeling, adversarial testing, red teaming, secure AI 
 </details>
 
 <details>
-<summary><b>🤖 GenAI &amp; Data Science Intern — NOV Inc. (National Oilwell Varco)</b> · Houston, TX · <i>Jun 2025 – Dec 2025</i></summary>
+<summary><b>🤖 GenAI Data Scientist — NOV Inc. (National Oilwell Varco)</b> · Houston, TX · <i>Jun 2025 – Jan 2026</i></summary>
 
 <br>
 
-- **Contact Us AI Automation & Email Responder** — routing engine grounded in Azure AI Search-indexed content; threat-modeled against direct/indirect prompt injection & jailbreak per OWASP LLM Top 10 + Agentic AI Threat Modeling. 0 critical vulns, 100% compliance, 50+ emails/day.
-- **Self-Improving MUD Report Automation** *(SPE 2026 – accepted)* — 3-agent GenAI system (vendor detection → prompt optimization → extraction) on Azure OpenAI via Azure AI Foundry, eval DB + job pipeline on Databricks. 89–100% accuracy, 360× speedup.
+- **Contact Us AI Automation & Email Responder** — AWS-hosted (Bedrock) routing engine grounded in indexed company content; threat-modeled against direct/indirect prompt injection & jailbreak per OWASP LLM Top 10 + Agentic AI Threat Modeling. 0 critical vulns, 100% compliance, 20+ hrs/week saved, 50+ emails/day @ 95% accuracy.
+- **Self-Improving MUD Report Automation** *(SPE 2026 – accepted)* — 3-agent GenAI system (vendor detection → prompt optimization → extraction), Azure Document Intelligence OCR + Azure OpenAI GPT-4o/5, eval DB + job pipeline on Databricks. 89–100% accuracy, 360× speedup (8 min vs 2 days), 0 incidents.
 - **Secured MCP Server for Expression Language conversion** — mitigated command injection (RCE), weak auth, missing rate limits, tool poisoning; fine-tuned a Code-Llama 8B model; enabled secure EL conversion for 5+ internal tools.
 - Consulted data scientists / automation engineers on secure agentic coding and tested their AI solutions.
 
@@ -114,6 +116,16 @@ I work across **AI threat modeling, adversarial testing, red teaming, secure AI 
 </details>
 
 <details>
+<summary><b>🌐 Software Engineer — Conceptech Solutions</b> · Dubai, UAE (Remote) · <i>Mar 2024 – Aug 2024</i></summary>
+
+<br>
+
+- Led a small engineering team delivering secure, customized web solutions for clients with React.js, Angular.js, and vanilla JavaScript.
+- Worked directly with clients to translate requirements into resilient, performant applications — secure coding practices and threat modeling, owning delivery timelines end-to-end.
+
+</details>
+
+<details>
 <summary><b>💻 Associate Software Engineer — Nagarro Software Pvt. Ltd.</b> · <i>Mar 2023 – Feb 2024</i></summary>
 
 <br>
@@ -122,6 +134,28 @@ I work across **AI threat modeling, adversarial testing, red teaming, secure AI 
 - Delivered secure REST APIs with JWT, RBAC, OWASP compliance — 1000+ daily requests, 99.9% uptime across 6+ apps.
 
 </details>
+
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:4F46E5,100:06B6D4&height=2" />
+
+## 🚀 Founder & Ventures
+
+Two AI products I founded and build end-to-end — product strategy, AI architecture, full-stack delivery, and security.
+
+### [HireEase](https://hireease.me) &nbsp;·&nbsp; [AplyEase](https://aplyease.com) — Founder & AI Product Engineer · *Nov 2024 – Present*
+> **AI-powered "done-for-you" job-application platform** — automated résumé tailoring + ATS optimization + job matching, paired with trained human specialists who apply on the client's behalf through a real-time tracking dashboard.
+- **40,000+ job applications processed for 300+ clients.** Applied to Y Combinator.
+- Full-stack TypeScript: React 18 / Vite / Tailwind / Radix + Express / Drizzle ORM / PostgreSQL, Passport + JWT + bcrypt, Zod schema shared across client & server.
+- Built the **AI résumé-tailoring engine**, a **LaTeX → PDF pipeline**, and a role-based (Client / Employee / Admin) **employee-operations portal** for application and payment tracking.
+- Public components: [`aplyease-backend`](https://github.com/ibrahimsaleem/aplyease-backend) · [`aplyease-frontend`](https://github.com/ibrahimsaleem/aplyease-frontend) · [`aplyeasedash`](https://github.com/ibrahimsaleem/aplyeasedash) · [`hireeaseemployee`](https://github.com/ibrahimsaleem/hireeaseemployee)
+
+### [WarmNode](https://warmnode.me) *(WarmNodeAI)* — Founder & AI Engineer · *Apr 2026 – Present*
+> **Privacy-focused AI relationship assistant** — helps you find who in your network can help, why they matter, and what message to send. Own product strategy, AI architecture, and full-stack delivery.
+- Solo founder · **YC Fall 2026 application submitted** · pre-seed.
+- Mobile-first PWA: React / TypeScript / Vite + Node / Express / TypeScript, PostgreSQL (Supabase) / Drizzle ORM, custom secure JWT auth (no third-party provider).
+- **Google Gemini** for semantic contact categorization and natural-language network queries (graceful local-keyword fallback); **CSV contact import** and **Apple Wallet pass (`.pkpass`)** generation for shareable, privacy-conscious professional profiles.
+
+### [Freelance / Conceptech Solutions](https://github.com/ibrahimsaleem) — Client web delivery · *2024*
+> Led a small team building secure customized web apps for clients (React / Angular), owning delivery end-to-end — see Experience above.
 
 <img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:4F46E5,100:06B6D4&height=2" />
 
@@ -148,8 +182,8 @@ I work across **AI threat modeling, adversarial testing, red teaming, secure AI 
 
 | Work Stream | What I'm building | Stack |
 |---|---|---|
-| [**Compass**](https://github.com/ibrahimsaleem/compass) | Multiplayer AI agent platform for orgs with the **Ward guardrail layer** — screens external data / tool results before the model, enforces command policy, human-approval gates, 3 postures (Strict / Auto / Dangerous) | TypeScript · Fastify · Postgres · Slack Bolt · Lit |
-| [**saleem-harness**](https://github.com/ibrahimsaleem/saleem-harness) | Personalized agent-CLI fork with a **default-on preventive tool-call safety guard** that blocks unsafe tool executions before they run | TypeScript · pnpm workspace · plugin architecture |
+| [**saleem-harness**](https://github.com/ibrahimsaleem/saleem-harness) | Personalised fork of DeepSeek Harness (agent CLI) with a **default-on preventive tool-call safety guard** that blocks unsafe tool executions before they run | TypeScript · pnpm workspace · plugin architecture |
+| [**Compass**](https://github.com/ibrahimsaleem/compass) *(contributor)* | Team-built multiplayer AI agent platform with the **Ward guardrail layer** (screens external data / tool results, command policy, human-approval gates); I contribute on the guardrail / security side | TypeScript · Fastify · Postgres · Slack Bolt · Lit |
 | [**dsh-dashboard**](https://github.com/ibrahimsaleem/dsh-dashboard) | Local real-time observability dashboard for agent harnesses — token usage, cost, live tool calls, security-risk signals, straight from session logs | Node.js · Express · SSE |
 | [**mcp-security-lab**](https://github.com/ibrahimsaleem/mcp-security-lab) | Runnable lab with **7 intentional MCP-server vulnerabilities** + fixed versions + working exploits, with a live WebSocket exploit dashboard | Python · FastMCP · Uvicorn |
 | [**switchlane**](https://github.com/ibrahimsaleem/switchlane) / [**llm-cost-aware-routing**](https://github.com/ibrahimsaleem/llm-cost-aware-routing) | Cost-aware LLM request routing with a live chat UI showing per-message & per-session cost savings | Python · LLM routing |
@@ -216,15 +250,22 @@ I work across **AI threat modeling, adversarial testing, red teaming, secure AI 
 **AI / LLM Stack**
 <br><br>
 `LangChain` `LangGraph` `MCP` `Hugging Face`
-`Ollama / Llama` `Azure OpenAI` `Azure AI Foundry`
-`Azure AI Search` `Databricks`
+`Ollama / Llama` `Google Gemini` `Anthropic API`
+`Azure OpenAI` `Azure AI Foundry` `Azure AI Search`
+`Azure Document Intelligence` `Databricks` `RouteLLM` `LiteLLM`
+
+**Cloud & Full-Stack**
+<br><br>
+`AWS (EC2 · Lambda · Bedrock · SES)` `Azure (Key Vault · Managed Identities · Defender for Cloud)`
+`React / Vite` `Node · Express` `.NET Core` `Angular`
+`PostgreSQL · Supabase · Drizzle ORM` `Docker · Kubernetes` `Terraform` `GitLab CI/CD`
 
 </td>
 </tr>
 </table>
 
 <p align="center">
-  <b>Certifications:</b> OWASP Top 10 for LLMs · Security+ <i>(in progress)</i> · Azure AZ-900 · Azure AI-900 · ISC2 CC · Fortinet NSE 1–3
+  <b>Certifications:</b> OWASP Top 10 for LLMs · Microsoft Certified: <b>Azure AI Engineer Associate</b> · Azure AZ-900 · Azure AI-900 · ISC2 CC · Fortinet NSE 1–3 · Security+ <i>(in progress)</i>
 </p>
 
 <img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:4F46E5,100:06B6D4&height=2" />

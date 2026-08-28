@@ -2,7 +2,7 @@
   <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:4F46E5,50:7C3AED,100:06B6D4&height=180&section=header&text=Project%20%26%20Repository%20Index&fontSize=34&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Full%20catalogue%20of%20every%20public%20repo%20—%20categorised%2C%20with%20context&descSize=15&descAlignY=60" alt="header" />
 </a>
 
-> Complete record of every public repository on [github.com/ibrahimsaleem](https://github.com/ibrahimsaleem) — **62 repos**, grouped by theme, each with what it is, the stack, and where it stands.
+> Complete record of every public repository on [github.com/ibrahimsaleem](https://github.com/ibrahimsaleem) — **62 repos** grouped by theme, plus the **2 founder ventures** (HireEase / AplyEase, WarmNode) whose core code is private. Each entry: what it is, the stack, and where it stands.
 > Generated **August 2026**. Star counts and dates are point-in-time snapshots.
 > Back to the [profile README](./README.md).
 
@@ -12,6 +12,7 @@
 
 | # | Category | Repos |
 |---|---|---|
+| 0 | [Founder Ventures](#0-founder-ventures) | 2 ventures |
 | 1 | [AI Security, Red Teaming & Pentest Automation](#1-ai-security-red-teaming--pentest-automation) | 12 |
 | 2 | [MCP Servers & Structured Reasoning](#2-mcp-servers--structured-reasoning) | 3 (+1 cross-listed) |
 | 3 | [AI Agent Harnesses, Platforms & Observability](#3-ai-agent-harnesses-platforms--observability) | 7 |
@@ -26,6 +27,29 @@
 | 12 | [Forks](#12-forks) | 2 |
 
 **Legend** — ★ stars · 🍴 fork · 📦 archived/paused · 🌐 has live deployment · 📄 linked to a paper
+
+---
+
+## 0. Founder Ventures
+
+AI products founded and built end-to-end — product strategy, AI architecture, full-stack delivery, and security. Core application code is private; public sub-repos are noted per venture.
+
+### HireEase / AplyEase — Founder & AI Product Engineer · *Nov 2024 – Present*
+**[hireease.me](https://hireease.me) · [aplyease.com](https://aplyease.com)** — AI-powered "done-for-you" job-application platform.
+- Automated résumé tailoring + ATS optimization + job matching, plus trained human specialists who apply on the client's behalf; clients see every submission (job, company, status, résumé used, recruiter-mail flag) in a real-time dashboard.
+- **Traction: 40,000+ job applications processed for 300+ clients. Applied to Y Combinator.**
+- **Stack:** full-stack TypeScript monorepo — React 18 / Vite / Tailwind / Radix UI / shadcn / TanStack Query / Wouter · Express + Drizzle ORM / PostgreSQL · Passport.js session auth + JWT + bcrypt · Zod / drizzle-zod shared validation.
+- **Built:** the AI résumé-tailoring engine, a LaTeX→PDF compilation pipeline, and a three-role (Client / Employee / Admin) operations portal with an Applied→Screening→Interview→Offer/Rejected/Hired lifecycle.
+- **Public sub-repos:** [`aplyease-backend`](https://github.com/ibrahimsaleem/aplyease-backend) · [`aplyease-frontend`](https://github.com/ibrahimsaleem/aplyease-frontend) · [`aplyeasedash`](https://github.com/ibrahimsaleem/aplyeasedash) · [`hireeaseemployee`](https://github.com/ibrahimsaleem/hireeaseemployee) (standalone employee portal — single Express service serving the React SPA + JWT API on shared Supabase PostgreSQL, with the AI résumé-tailoring endpoint and LaTeX→PDF compile).
+
+### WarmNode (WarmNodeAI) — Founder & AI Engineer · *Apr 2026 – Present*
+**[warmnode.me](https://warmnode.me)** — privacy-focused AI relationship assistant: find who in your network can help, why they matter, and what message to send.
+- **Solo founder · YC Fall 2026 application submitted · pre-seed, no funding taken.**
+- **Stack:** mobile-first PWA — React / TypeScript / Vite · Node / Express / TypeScript · PostgreSQL (Supabase) / Drizzle ORM with programmatic RLS policies · custom secure JWT auth (no third-party provider).
+- **AI:** Google Gemini (`gemini-1.5-flash`) for semantic contact categorization and natural-language network queries, with a graceful local-keyword-search fallback when no key is present.
+- **Shipped:** CSV contact import, QR public profiles, and Apple Wallet pass (`.pkpass`) generation for privacy-conscious profile sharing at events. Roadmap: Google Wallet, native contact sync, relationship-graph visualization, Stripe premium quotas.
+
+> `warmnode` (application code) and `warmnode-fundraising` (YC / investor materials) are private repos and are not part of the public catalogue below.
 
 ---
 
@@ -124,11 +148,12 @@ The original of the family — see [category 1](#1-ai-security-red-teaming--pent
 
 Building, branding, and instrumenting agent runtimes — and putting guardrails around them.
 
-### [compass](https://github.com/ibrahimsaleem/compass)
-**Multiplayer agent harness for work — in Slack and on the web — with the Ward guardrail layer.** · TypeScript (Fastify, Postgres, Slack Bolt, Vite + Lit) · Created Aug 2026
+### [compass](https://github.com/ibrahimsaleem/compass) — *contributor, not primary author*
+**Team-built multiplayer agent platform for work — Slack + web — with the Ward guardrail layer.** · TypeScript (Fastify, Postgres, Slack Bolt, Vite + Lit) · Created Aug 2026
 - Every employee and every room gets its own isolated, scoped workspace: memory, files, keychain view, permissions, crons, web apps, durable sandbox.
 - **Ward guardrail boundary**: screens external data and tool results before the model, enforces command policy, and gates actions behind human approval — three postures (Strict / Auto / Dangerous).
 - Vendor-neutral: Pi, OpenCode, Codex, and Claude Code all drive the same core; `compass` CLI deploys to Fly or AWS.
+- *Contribution scope: guardrail / security side. Majority of the codebase is other contributors' work — listed here for completeness, not as a solo project.*
 
 ### [saleem-harness](https://github.com/ibrahimsaleem/saleem-harness)
 **"Saleem Harness" — a personalized coding-agent CLI (`saleem`) with a preventive tool-call safety guard on by default.** · TypeScript (pnpm workspace, Cordis) · Created Aug 2026
@@ -219,11 +244,12 @@ Proving cost-per-resolved-task savings with real dollars, not vendor benchmark n
 
 ## 7. Full-Stack Web Apps & SaaS
 
-### AplyEase — job-application platform (split from a monorepo)
+### HireEase / AplyEase — public components of the founder venture
+> Full venture writeup and traction (40,000+ applications, 300+ clients, YC) in **[§0 Founder Ventures](#0-founder-ventures)**. These are the public repos split out of the private monorepo:
 - **[aplyease-backend](https://github.com/ibrahimsaleem/aplyease-backend)** — ★2 · Express + TypeScript + Drizzle ORM API. Created Aug 2025.
 - **[aplyease-frontend](https://github.com/ibrahimsaleem/aplyease-frontend)** — ★2 · React + Vite client. Created Aug 2025.
 - **[aplyeasedash](https://github.com/ibrahimsaleem/aplyeasedash)** — ★1 · Python analytics/admin dashboard. Created Apr 2025.
-- **[hireeaseemployee](https://github.com/ibrahimsaleem/hireeaseemployee)** — ★1 · "Aplyease Employee Portal": one Express service serving both the React (Vite + Tailwind) SPA and a JWT-auth API, on shared Supabase PostgreSQL, Gemini-powered. Created Mar 2026.
+- **[hireeaseemployee](https://github.com/ibrahimsaleem/hireeaseemployee)** — ★1 · "Aplyease Employee Portal": one Express service serving both the React (Vite + Tailwind) SPA and a JWT-auth API on shared Supabase PostgreSQL, with an AI résumé-tailoring endpoint and LaTeX→PDF compilation. Created Mar 2026.
 
 ### [Invoice-Management](https://github.com/ibrahimsaleem/Invoice-Management)
 **"Power Clean Pro — Business Manager" for pressure-washing businesses.** · TypeScript · Created May 2026 · Last active Jun 2026
@@ -241,14 +267,17 @@ Proving cost-per-resolved-task savings with real dollars, not vendor benchmark n
 
 ### [EcoShiftConnect](https://github.com/ibrahimsaleem/EcoShiftConnect) — ★1
 **Eco-friendly load-shifting web app that helps households cut cost and carbon.** · TypeScript · Created Sep 2025
-- Appliance catalog with real-time wattage tracking, flexible scheduling with quiet-hours constraints, a 24-hour color-coded eco-time-band timeline, and savings recommendations from real-time electricity pricing.
+- Recommends optimal appliance-scheduling windows from real-time Houston-market electricity pricing and color-coded eco time bands (GREEN/BLUE/ORANGE/RED), with a gamified EcoPoints/rewards system and CO₂-reduction tracking.
+- **Stack:** React 18 + Tailwind + Radix UI + Framer Motion + Recharts · Express + Drizzle ORM · Google Gemini for natural-language scheduling recommendations · optional OpenWeather integration.
 
 ### [InstaUnfollow](https://github.com/ibrahimsaleem/InstaUnfollow) — ★3
 **Instagram Unfollower Manager.** · Created Jun 2023 · Last active Mar 2026
 - Search users, view results, whitelist/non-whitelist management, bulk unfollow, and unfollowing logs — a user-friendly interface over unfollower tracking.
 
 ### [voiceease](https://github.com/ibrahimsaleem/voiceease)
-**Voice-interface application.** · TypeScript · Created Dec 2025 · minimal / early-stage
+**"VoiceEase" — marketing / lead-generation site around a voice-agent product.** · TypeScript · Created Dec 2025
+- React + Vite (Radix UI, Tailwind, Framer Motion) over Express + Drizzle ORM / PostgreSQL with Passport session auth: account register/login, an "agent request" intake flow, demo-request and contact forms, and an admin dashboard (users, requests, leads, contacts, stats).
+- The repo is the lead-capture shell; the underlying voice-agent functionality is not documented in-repo.
 
 ### [Asyncwebsite](https://github.com/ibrahimsaleem/Asyncwebsite)
 **Async web app experiment.** · TypeScript · Created Jun 2026 · minimal / early-stage
