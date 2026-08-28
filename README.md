@@ -71,6 +71,8 @@
 | Self-improving MUD report parsing | **360× faster** (8 min vs 2 days), 89–100% accuracy, 0 incidents | NOV *(SPE 2026)* |
 | LIMA pentest framework | **95% success rate**, 8+ hrs → 15 min | UH *(IEEE FMLDS 2025)* |
 | PentestThinkingMCP | **90% accuracy / 50+ scenarios**, HTB "Lame" in 3 min @ ~$0.03/run | UH |
+| PentestThinkingMCP in production | **~10,000 monthly tool calls @ 99.99% reliability** on Smithery · Claude / Cursor / VS Code | OSS |
+| SwitchLane cost-aware routing | **40.5% cost reduction @ 100% pass rate** (1,500-prompt benchmark) · 74.6% in live chat · ~1 ms routing | OSS |
 | LLM vs. expert pentesters benchmark | **12/15 HTB boxes**, ~95% cost reduction | UH |
 | HireEase / AplyEase (founder) | **40,000+ applications processed · 300+ clients** · applied to YC | Founder |
 | WarmNode (founder) | Solo-built AI networking PWA · **YC Fall 2026 application submitted** | Founder |
@@ -99,7 +101,7 @@
 <br>
 
 - **Contact Us AI Automation & Email Responder** — AWS-hosted (Bedrock) routing engine grounded in indexed company content; threat-modeled against direct/indirect prompt injection & jailbreak per OWASP LLM Top 10 + Agentic AI Threat Modeling. 0 critical vulns, 100% compliance, 20+ hrs/week saved, 50+ emails/day @ 95% accuracy.
-- **Self-Improving MUD Report Automation** *(SPE 2026 – accepted)* — 3-agent GenAI system (vendor detection → prompt optimization → extraction), Azure Document Intelligence OCR + Azure OpenAI GPT-4o/5, eval DB + job pipeline on Databricks. 89–100% accuracy, 360× speedup (8 min vs 2 days), 0 incidents.
+- **Self-Improving MUD Report Automation** — 3-agent GenAI system (vendor detection → prompt optimization → extraction), Azure Document Intelligence OCR + Azure OpenAI GPT-4o/5, eval DB + job pipeline on Databricks. 89–100% accuracy, 360× speedup (8 min vs 2 days), 0 incidents. Published as *"Self-Improving Generative AI Agents for Automated Daily Mud Report Parsing"*, IADC/SPE 2026 ([DOI](https://doi.org/10.2118/230772-MS)).
 - **Secured MCP Server for Expression Language conversion** — mitigated command injection (RCE), weak auth, missing rate limits, tool poisoning; fine-tuned a Code-Llama 8B model; enabled secure EL conversion for 5+ internal tools.
 - Consulted data scientists / automation engineers on secure agentic coding and tested their AI solutions.
 
@@ -166,10 +168,12 @@ Two AI products I founded and build end-to-end — product strategy, AI architec
 
 | Project | What it does | Focus / Stack |
 |---|---|---|
-| [**PentestThinkingMCP**](https://github.com/ibrahimsaleem/PentestThinkingMCP) 📌 | AI-powered pentest reasoning engine (MCP server) for attack-path planning, CTF/HTB solving, automated workflows | MCP · Beam Search · MCTS · Metasploit/Nmap/Burp — *IEEE paper* |
-| [**ClawProtect**](https://github.com/ibrahimsaleem/ClawProtect) 📌 | Defense-in-depth reverse proxy for AI agent gateways — inspects requests/responses for prompt injection, PII leaks, malware | Go · eBPF syscall monitoring · egress firewall |
+| [**PentestThinkingMCP**](https://github.com/ibrahimsaleem/PentestThinkingMCP) 📌 | AI-powered pentest reasoning engine (MCP server) for attack-path planning, CTF/HTB solving, automated workflows — **~10,000 monthly tool calls @ 99.99% reliability** on Smithery, integrated across Claude, Cursor & VS Code | MCP · Beam Search · MCTS · Metasploit/Nmap/Burp — *IEEE paper* |
+| [**ClawProtect**](https://github.com/ibrahimsaleem/ClawProtect) 📌 · [paper](https://github.com/ibrahimsaleem/ClawProtect/blob/main/ClawProtect%20A%20Defense-in-Depth%20Security%20Stack%20for%20AI%20Agent%20Gateways.pdf) | Content-aware security proxy for AI agent gateways (prompt injection / PII / secrets detection), unified with an eBPF kernel monitor and egress firewall by a **cross-layer event bus** for adaptive response across app / network / kernel layers | Go · Python · eBPF · Prometheus |
+| [**SwitchLane**](https://github.com/ibrahimsaleem/switchlane) · [demo](https://www.linkedin.com/posts/ibrahimsaleem91_aiengineering-llm-tokenoptimization-activity-7496113235692105728--8Eg) | Cost-aware LLM request routing — a single classifier call (~1 ms, no dual model calls) picks one model per request. Benchmarked: **40.5% cost reduction at 100% task pass rate** (3 configs, same 1,500 prompts, real token usage & API pricing); **74.6% savings** in a live chat session | Python · FastAPI · RouteLLM · [`llm-cost-aware-routing`](https://github.com/ibrahimsaleem/llm-cost-aware-routing) *(validation)* |
+| [**Saleem Harness**](https://github.com/ibrahimsaleem/saleem-coding-agent) | Actively-developed personal coding-agent CLI (`saleem`), plugin-based on the **Cordis** composability framework, with a **default-on preventive tool-call safety guard** that blocks unsafe tool executions *before* they run (not logging after the fact) | TypeScript · pnpm workspace · plugin architecture |
 | [**EncoderThinkingMCP**](https://github.com/ibrahimsaleem/EncoderThinking) 📌 | MCP server guiding LLMs through encoder-decoder ML training via Beam Search + MCTS | MCP · PyTorch/TensorFlow/Keras — *IEEE Southwest 2026* |
-| [**TokenLess / TokenWatch**](https://github.com/ibrahimsaleem/TokenLess) 📌 | Token-optimization hub + dependency-free local LLM cost-tracking library | Python · LiteLLM gateway · guardrails · prompt compression |
+| [**TokenLess / TokenWatch**](https://github.com/ibrahimsaleem/TokenLess) 📌 | Token-optimization hub + dependency-free local LLM cost-tracking library; packages reusable **AI skill packs** (token/cost tracking, context optimization, enterprise efficiency guidelines) that plug directly into **Claude Code, Windsurf, MCP agents & Copilot** | Python · LiteLLM gateway · guardrails · prompt compression |
 | [**UltraSearch**](https://github.com/ibrahimsaleem/ultrasearch) 📌 | Lightning-fast laptop-wide RAG search built on LEANN vector DB | Python · Streamlit · Sentence Transformers · FAISS/HNSW |
 | [**LLM Red-Team Library**](https://github.com/ibrahimsaleem) | Provider-agnostic red-team harness — 415 adversarial/bias/hallucination prompts, MAP-Elites landscape, CI regression suite | Python · OWASP LLM Top 10 · LLM-as-Judge |
 | [**LocalRAGAgent**](https://github.com/ibrahimsaleem/LocalRAGAgent) | Offline, privacy-preserving RAG pipeline | Python · on-prem LLM |
@@ -183,11 +187,9 @@ Two AI products I founded and build end-to-end — product strategy, AI architec
 
 | Work Stream | What I'm building | Stack |
 |---|---|---|
-| [**saleem-harness**](https://github.com/ibrahimsaleem/saleem-harness) | Personalised fork of DeepSeek Harness (agent CLI) with a **default-on preventive tool-call safety guard** that blocks unsafe tool executions before they run | TypeScript · pnpm workspace · plugin architecture |
 | [**Compass**](https://github.com/ibrahimsaleem/compass) *(contributor)* | Team-built multiplayer AI agent platform with the **Ward guardrail layer** (screens external data / tool results, command policy, human-approval gates); I contribute on the guardrail / security side | TypeScript · Fastify · Postgres · Slack Bolt · Lit |
 | [**dsh-dashboard**](https://github.com/ibrahimsaleem/dsh-dashboard) | Local real-time observability dashboard for agent harnesses — token usage, cost, live tool calls, security-risk signals, straight from session logs | Node.js · Express · SSE |
 | [**mcp-security-lab**](https://github.com/ibrahimsaleem/mcp-security-lab) | Runnable lab with **7 intentional MCP-server vulnerabilities** + fixed versions + working exploits, with a live WebSocket exploit dashboard | Python · FastMCP · Uvicorn |
-| [**switchlane**](https://github.com/ibrahimsaleem/switchlane) / [**llm-cost-aware-routing**](https://github.com/ibrahimsaleem/llm-cost-aware-routing) | Cost-aware LLM request routing with a live chat UI showing per-message & per-session cost savings | Python · LLM routing |
 
 <img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:4F46E5,100:06B6D4&height=2" />
 
@@ -196,7 +198,7 @@ Two AI products I founded and build end-to-end — product strategy, AI architec
 | Paper | Venue | Status |
 |---|---|---|
 | **LIMA: Leveraging Large Language Models and MCP Servers for Initial Machine Access** — *first author* · [Paper](https://ieeexplore.ieee.org/abstract/document/11446751) | IEEE FMLDS 2025 | ✅ Published |
-| **Self-Improving GenAI Agent for Fully Automated Report Parsing in Enterprise Environments** — *second author* · [Scholar](https://scholar.google.com/citations?user=lzZ4pKcAAAAJ&hl=en&oi=ao) | IADC/SPE 2026 | ✅ Published |
+| **Self-Improving Generative AI Agents for Automated Daily Mud Report Parsing** — *second author* · [DOI: 10.2118/230772-MS](https://doi.org/10.2118/230772-MS) | IADC/SPE International Drilling Conference & Exhibition, 2026 | ✅ Published |
 | **EncoderThinkingMCP: Guided Encoder-Decoder Model Development via MCP** — *w/ T. Banerjee* | IEEE Southwest 2026 | 🧪 Experiment phase |
 | **Agentic Lean Embedding System for Vulnerability Discovery** — *lead researcher* | — | 🔬 Active research |
 | **Auto ARC: AI-Powered Floor Plan Generation for Architectural Workflow Optimization** — *w/ M. Raza* | IEEE SoutheastCon 2026 | 📝 To be submitted |

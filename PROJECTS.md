@@ -15,7 +15,7 @@
 | 0 | [Founder Ventures](#0-founder-ventures) | 2 ventures |
 | 1 | [AI Security, Red Teaming & Pentest Automation](#1-ai-security-red-teaming--pentest-automation) | 12 |
 | 2 | [MCP Servers & Structured Reasoning](#2-mcp-servers--structured-reasoning) | 3 (+1 cross-listed) |
-| 3 | [AI Agent Harnesses, Platforms & Observability](#3-ai-agent-harnesses-platforms--observability) | 7 |
+| 3 | [AI Agent Harnesses, Platforms & Observability](#3-ai-agent-harnesses-platforms--observability) | 5 |
 | 4 | [LLM Cost Optimization & Routing](#4-llm-cost-optimization--routing) | 3 |
 | 5 | [RAG & Semantic Search](#5-rag--semantic-search) | 2 |
 | 6 | [GenAI Applications & Career Tools](#6-genai-applications--career-tools) | 5 |
@@ -61,13 +61,14 @@ The core of the portfolio: turning LLMs and agents into security instruments, an
 **Systematic, AI-powered penetration-testing reasoning engine delivered as an MCP server.** · JavaScript · Created May 2025 · Last active Aug 2025
 - Guides an LLM through attack-path planning, CTF/HTB solving, and automated pentest workflows using **Beam Search** and **Monte Carlo Tree Search**, with attack-step scoring and per-step tool recommendations.
 - Integrates Metasploit, Nmap, and Burp Suite; secured with prompt-injection defenses, I/O validation, and rate limiting per OWASP Agentic AI Threat Modeling.
-- Benchmark: compromised HTB "Lame" in ~3 min (~$0.03/run); 90% accuracy across 50+ scenarios. Basis of the **IEEE FMLDS 2025** LIMA paper. Deployed on [Smithery](https://smithery.ai/server/@ibrahimsaleem/pentestthinkingmcp).
+- Benchmark: compromised HTB "Lame" in ~3 min (~$0.03/run); 90% accuracy across 50+ scenarios. Basis of the **IEEE FMLDS 2025** LIMA paper.
+- **In production:** ~10,000 monthly tool calls at **99.99% reliability** on [Smithery](https://smithery.ai/server/@ibrahimsaleem/pentestthinkingmcp), integrated across Claude, Cursor, and VS Code — among the most-used pentesting MCP servers on the platform.
 
-### [ClawProtect](https://github.com/ibrahimsaleem/ClawProtect) — ★1 · 📄
+### [ClawProtect](https://github.com/ibrahimsaleem/ClawProtect) — ★1 · 📄 [architecture paper](https://github.com/ibrahimsaleem/ClawProtect/blob/main/ClawProtect%20A%20Defense-in-Depth%20Security%20Stack%20for%20AI%20Agent%20Gateways.pdf)
 **Defense-in-depth AI security stack for agent gateways.** · Go 1.24+ / Python 3.11+ · Created Mar 2026
-- HTTP reverse proxy that inspects requests and responses for prompt injection, PII leakage, and malware before they reach the model.
-- Combines application-layer content filtering, **kernel-level syscall monitoring via eBPF**, and network-egress firewall controls — 29 modules, MIT-licensed.
-- Ships a policy language, structured audit-log format, install guide, WSL2 notes, and an accompanying paper draft.
+- **Content-aware HTTP security proxy** + YAML policy engine — detects prompt injection, PII, secrets, and vulnerability patterns in real-time LLM inputs/outputs.
+- Adds a **kernel-level eBPF syscall monitor** and a network-egress firewall to isolate containerized agent workloads, all **unified by a cross-layer event bus** for adaptive response across app / network / kernel layers — 29 modules.
+- Ships a policy language, structured audit-log format, Prometheus-compatible metrics, install guide, WSL2 notes, and an academic-style architecture paper.
 
 ### [mcp-security-lab](https://github.com/ibrahimsaleem/mcp-security-lab)
 **Runnable MCP setup with seven deliberate vulnerabilities and their fixes.** · HTML / Python (FastMCP, Uvicorn) · Created Aug 2026
@@ -155,18 +156,12 @@ Building, branding, and instrumenting agent runtimes — and putting guardrails 
 - Vendor-neutral: Pi, OpenCode, Codex, and Claude Code all drive the same core; `compass` CLI deploys to Fly or AWS.
 - *Contribution scope: guardrail / security side. Majority of the codebase is other contributors' work — listed here for completeness, not as a solo project.*
 
-### [saleem-harness](https://github.com/ibrahimsaleem/saleem-harness)
-**"Saleem Harness" — a personalized coding-agent CLI (`saleem`) with a preventive tool-call safety guard on by default.** · TypeScript (pnpm workspace, Cordis) · Created Aug 2026
-- Everything-is-a-plugin architecture; `tool-guard-saleem` package blocks unsafe tool executions before they run; custom branded web UI at `127.0.0.1:3080`.
-- Runs alongside (not replacing) other harnesses on the same machine. Developer preview.
-
-### [saleem-coding-agent](https://github.com/ibrahimsaleem/saleem-coding-agent)
-**Personalized coding agent.** · TypeScript · Created Aug 2026
-- Sibling repo to `saleem-harness` (shared README and codebase); packaging/branding variant.
-
-### [saleem-harness-cli](https://github.com/ibrahimsaleem/saleem-harness-cli)
-**CLI distribution of Saleem Harness.** · Created Aug 2026
-- Third sibling in the Saleem Harness set — the installable `saleem` command with the default-on safety guard.
+### [saleem-coding-agent](https://github.com/ibrahimsaleem/saleem-coding-agent) &nbsp;— *canonical repo*
+**"Saleem Harness" — an actively-developed personal coding-agent CLI (`saleem`).** · TypeScript (pnpm workspace, Cordis) · Created Aug 2026
+- Fully **plugin-based on the [Cordis](https://github.com/cordiverse/cordis) composability framework**; installable alongside existing agent-harness setups without replacing them.
+- **Default-on, preventive tool-call safety guard** (`tool-guard-saleem`) that intercepts and blocks unsafe tool executions *before* they run — not logging or alerting after the fact.
+- Local Web UI (`127.0.0.1:3080`) + CLI entrypoint with hot-reloadable plugins. Developer preview.
+- `saleem-harness` / `saleem-harness-cli` are earlier siblings that shared this codebase; **`saleem-coding-agent` is the one to reference.**
 
 ### [dsh-dashboard](https://github.com/ibrahimsaleem/dsh-dashboard)
 **"DSH Monitor" — local real-time observability dashboard for DeepSeek Harness (`dsh`).** · JavaScript (Node.js, Express) · Created Aug 2026
@@ -187,9 +182,11 @@ Building, branding, and instrumenting agent runtimes — and putting guardrails 
 
 Proving cost-per-resolved-task savings with real dollars, not vendor benchmark numbers — an AI-Engineer JD pattern.
 
-### [switchlane](https://github.com/ibrahimsaleem/switchlane)
-**SwitchLane — cost-aware LLM request routing with a live chat UI showing per-message and per-session savings.** · Python · Created Aug 2026
-- Routes each query to the cheapest model that can actually handle it; live chat UI, a Model Advisor, and a full architecture/methodology write-up, all as one site.
+### [switchlane](https://github.com/ibrahimsaleem/switchlane) · [demo video](https://www.linkedin.com/posts/ibrahimsaleem91_aiengineering-llm-tokenoptimization-activity-7496113235692105728--8Eg)
+**SwitchLane — cost-aware LLM request routing platform.** · Python · FastAPI · vanilla JS · Created Aug 2026
+- A trained classifier embeds each incoming prompt and scores whether the expensive model would meaningfully beat a lightweight one, then routes to **exactly one model per request (no dual-calling)** — routing decision ~**1 ms**.
+- Full-stack site: live chat interface with real-time per-message latency/token tracking, a **Model Advisor** for cost-benefit analysis, and a methodology/architecture page.
+- **Benchmarked** across 3 configs on the same **1,500 prompts** with real token usage and real API pricing: **40.5% cost reduction at 100% task pass rate**; **74.6% cost savings** in a separate live chat session.
 - Routing engine: **RouteLLM** (Apache-2.0, UC Berkeley/LMSYS + Anyscale), vendored in full with attribution.
 
 ### [llm-cost-aware-routing](https://github.com/ibrahimsaleem/llm-cost-aware-routing)
@@ -199,8 +196,9 @@ Proving cost-per-resolved-task savings with real dollars, not vendor benchmark n
 
 ### [TokenLess](https://github.com/ibrahimsaleem/TokenLess) — ★1
 **Token-optimization hub for teams building AI apps.** · Python 3.9+ · Created May 2026 · Last active Jun 2026
-- Structured docs, employee training paths with schedule/levels, developer guidelines, system-prompt templates, and Markdown skill packs (Claude Code, Windsurf, cross-agent).
-- **TokenWatch** — a zero-dependency Python library for local LLM cost tracking and budgets. LiteLLM gateway demo with guardrails and prompt compression.
+- Structured docs, employee training paths with schedule/levels, developer guidelines, and system-prompt templates.
+- Packages reusable **AI skill packs** — token & cost tracking, context optimization, enterprise efficiency guidelines — that **plug directly into Claude Code, Windsurf, MCP agents, and Copilot** workflows.
+- **TokenWatch** — a zero-dependency Python library for local LLM cost tracking and budget alerts. LiteLLM gateway demo with guardrails and prompt compression.
 
 ---
 
