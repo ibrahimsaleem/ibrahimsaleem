@@ -20,6 +20,13 @@
   <img src="https://img.shields.io/badge/📍-Houston,%20TX-informational?style=flat-square" />
   <img src="https://img.shields.io/badge/🎓-MS%20Cybersecurity%20·%20UH%20'26%20·%20GPA%203.98-success?style=flat-square" />
   <img src="https://img.shields.io/badge/🔬-2%20Published%20Papers-blueviolet?style=flat-square" />
+  <img src="https://img.shields.io/badge/💻-GitHub%20Member%209%2B%20Years-181717?style=flat-square&logo=github&logoColor=white" />
+</p>
+
+<p align="center">
+  <a href="https://github.com/ibrahimsaleem">
+    <img src="https://github-readme-stats.vercel.app/api/profiledetails/?username=ibrahimsaleem&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true" />
+  </a>
 </p>
 
 <img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:4F46E5,100:06B6D4&height=2" />
@@ -240,6 +247,11 @@ flowchart LR
 <p align="center">
   <img height="165" src="https://github-readme-stats.vercel.app/api?username=ibrahimsaleem&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&include_all_commits=true" />
   <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ibrahimsaleem&layout=compact&theme=tokyonight&hide_border=true&langs_count=8" />
+</p>
+
+<p align="center">
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=ibrahimsaleem&theme=tokyonight&hide_border=true&utcOffset=-6" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=ibrahimsaleem&theme=tokyonight&hide_border=true" />
 </p>
 
 <p align="center">
