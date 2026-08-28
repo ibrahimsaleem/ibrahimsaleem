@@ -1,5 +1,5 @@
 <a href="https://ibrahimsaleem.com">
-  <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:4F46E5,50:7C3AED,100:06B6D4&height=210&section=header&text=Mohammad%20Ibrahim%20Saleem&fontSize=42&fontColor=ffffff&animation=fadeIn&fontAlignY=34&desc=AI%20Security%20%26%20Governance%20Engineer%20%40%20AT%26T&descSize=18&descAlignY=54" alt="header" />
+  <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:4F46E5,50:7C3AED,100:06B6D4&height=210&section=header&text=Mohammad%20Ibrahim%20Saleem&fontSize=42&fontColor=ffffff&animation=fadeIn&fontAlignY=34&desc=AI%20Security%20%26%20Governance%20Engineer%20%40%20AT%26T%20%C2%B7%20Founder%20of%20HireEase%20%26%20WarmNode&descSize=16&descAlignY=54" alt="header" />
 </a>
 
 <p align="center">
@@ -21,6 +21,7 @@
   <img src="https://img.shields.io/badge/📍-Houston,%20TX-informational?style=flat-square" />
   <img src="https://img.shields.io/badge/🎓-MS%20Cybersecurity%20·%20UH%20'26%20·%20GPA%203.98-success?style=flat-square" />
   <img src="https://img.shields.io/badge/🔬-2%20Published%20Papers-blueviolet?style=flat-square" />
+  <img src="https://img.shields.io/badge/🚀-Founder%20·%20HireEase%20%26%20WarmNode-7C3AED?style=flat-square" />
   <img src="https://img.shields.io/badge/💻-GitHub%20Member%209%2B%20Years-181717?style=flat-square&logo=github&logoColor=white" />
 </p>
 
@@ -37,7 +38,7 @@
 <table>
 <tr><td width="60%" valign="top">
 
-**AI Security & Governance Engineer** securing enterprise-scale **LLM, GenAI, MCP, and agentic AI systems** — and a **solo founder** shipping AI products end-to-end.
+**AI Security & Governance Engineer** securing enterprise-scale **LLM, GenAI, MCP, and agentic AI systems** — and a **solo founder** shipping AI products end-to-end ([HireEase](https://hireease.me), [WarmNode](https://warmnode.me)).
 
 **9+ years** of hands-on software development across self-directed projects, freelance work, **startups**, internships, research, and enterprise roles. I work across **AI threat modeling, adversarial testing, red teaming, secure AI SDLC, AI governance, and runtime security controls** — turning ad-hoc AI risk work into repeatable, measurable, auditable engineering.
 
